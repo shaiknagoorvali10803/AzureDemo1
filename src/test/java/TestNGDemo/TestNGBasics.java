@@ -1,5 +1,10 @@
 package TestNGDemo;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -13,7 +18,7 @@ import org.testng.annotations.Test;
 public class TestNGBasics {
 
 		@BeforeSuite
-		public void SetUpSelect()
+		public void SetUpSelect() throws IOException
 		{
 			System.out.println("step system property for chrome ");
 			System.out.println("System property: " + System.getProperty("user.dir"));
