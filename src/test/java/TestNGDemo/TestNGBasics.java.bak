@@ -17,14 +17,6 @@ public class TestNGBasics {
 		{
 			System.out.println("step system property for chrome ");
 			System.out.println("System property: " + System.getProperty("user.dir"));
-			String path=System.getProperty("user.dir") + ".\\src\\test\\resources\\config.properties";
-			FileInputStream fis= new FileInputStream(path);
-			Properties prop = new Properties();
-			prop.load(fis);
-			System.out.println(prop.getProperty("url"));
-			System.out.println(prop.getProperty("token"));
-			System.out.println(prop.getProperty("url_ui"));
-			
 		}
 	
 		@BeforeTest
