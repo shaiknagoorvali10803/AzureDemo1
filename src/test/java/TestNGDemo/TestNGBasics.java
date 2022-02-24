@@ -16,6 +16,7 @@ public class TestNGBasics {
 		public void SetUpSelect()
 		{
 			System.out.println("step system property for chrome ");
+			System.out.println("System property: " + System.getProperty("user.dir"));
 		}
 	
 		@BeforeTest
