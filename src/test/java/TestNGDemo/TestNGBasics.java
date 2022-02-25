@@ -1,5 +1,6 @@
 package TestNGDemo;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -21,14 +22,29 @@ public class TestNGBasics {
 		public void SetUpSelect() throws IOException
 		{
 			System.out.println("step system property for chrome ");
+			
+			System.out.println("++++++++++++++++++++++++++++++");
+			
 			System.out.println("System property: " + System.getProperty("user.dir"));
 			String path=System.getProperty("user.dir") + ".\\src\\test\\resources\\config.properties";
 			FileInputStream fis= new FileInputStream(path);
 			Properties prop = new Properties();
 			prop.load(fis);
-			System.out.println(prop.getProperty("url"));
-			System.out.println(prop.getProperty("token"));
-			System.out.println(prop.getProperty("url_ui"));
+			System.out.println("values fetched using double slash:"+prop.getProperty("url"));
+			System.out.println("values fetched using double slash:"+prop.getProperty("token"));
+			System.out.println("values fetched using double slash:"+prop.getProperty("url_ui"));
+			
+			System.out.println("++++++++++++++++++++++++++++++");
+			
+			String path1=System.getProperty("user.dir") + File.separator+"/src/test/resources/config.properties";
+			FileInputStream fis1= new FileInputStream(path1);
+			Properties prop1 = new Properties();
+			prop1.load(fis1);
+			System.out.println("values fetched using sinle slash and file separator:"+ prop1.getProperty("url"));
+			System.out.println("values fetched using sinle slash and file separator:"+ prop1.getProperty("token"));
+			System.out.println("values fetched using sinle slash and file separator:"+ prop1.getProperty("url_ui"));
+			
+			System.out.println("++++++++++++++++++++++++++++++");
 			
 		}
 	
