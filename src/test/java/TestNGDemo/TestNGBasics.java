@@ -26,7 +26,10 @@ public class TestNGBasics {
 			System.out.println("++++++++++++++++++++++++++++++");
 			
 			System.out.println("System property: " + System.getProperty("user.dir"));
+			System.out.println("Environment passed from Jenkins " + System.getProperty("name"));
+			
 			String path=System.getProperty("user.dir") + ".\\src\\test\\resources\\config.properties";
+			
 			FileInputStream fis= new FileInputStream(path);
 			Properties prop = new Properties();
 			prop.load(fis);
@@ -37,6 +40,7 @@ public class TestNGBasics {
 			System.out.println("++++++++++++++++++++++++++++++");
 			
 			String path1=System.getProperty("user.dir") + File.separator+"/src/test/resources/config.properties";
+			
 			FileInputStream fis1= new FileInputStream(path1);
 			Properties prop1 = new Properties();
 			prop1.load(fis1);
