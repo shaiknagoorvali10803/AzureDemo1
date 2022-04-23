@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.TestNGExceptionTimeOut">
+      <class name="TestNGDemo.TestNGBasics">
         <methods>
-          <include name="sum"/>
+          <include name="SetUpSelect"/>
+          <include name="enterURL"/>
+          <include name="deleteAllCookies"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="lunchBrowser"/>
+          <include name="chromTest"/>
+          <include name="generateReport"/>
         </methods>
-      </class> <!-- TestNG.TestNGExceptionTimeOut -->
+      </class> <!-- TestNGDemo.TestNGBasics -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

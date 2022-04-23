@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="4" parallel="methods" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="org.AzureChildModule2.TestNGBasics">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- org.AzureChildModule2.TestNGBasics -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

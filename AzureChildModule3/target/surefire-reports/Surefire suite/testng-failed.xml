@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="org.AzureChildModule3.TestNGBasics">
+        <methods>
+          <include name="lunchBrowser"/>
+          <include name="deleteAllCookies"/>
+          <include name="login"/>
+          <include name="test1"/>
+          <include name="enterURL"/>
+          <include name="SetUpSelect"/>
+          <include name="generateReport"/>
+          <include name="chromTest"/>
+          <include name="logout"/>
+          <include name="test2"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- org.AzureChildModule3.TestNGBasics -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
