@@ -48,6 +48,7 @@ public class TestNGBasics {
 			BaseTest.setDriver(driver);
 			BaseTest.getDriver().get("https://www.google.com/");
 			System.out.println("test1");
+			System.out.println("Title of the page is :"+BaseTest.getDriver().getTitle());
 			Thread.sleep(5000);
 				
 		}
@@ -59,6 +60,7 @@ public class TestNGBasics {
 			driver =new ChromeDriver();
 			BaseTest.setDriver(driver);
 			BaseTest.getDriver().get("https://www.google.com/");
+			System.out.println("Title of the page is :"+BaseTest.getDriver().getTitle());
 			System.out.println("test2");
 			Thread.sleep(5000);
 		}
