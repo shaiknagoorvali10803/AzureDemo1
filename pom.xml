@@ -114,7 +114,7 @@
 
 	</dependencies>
 	<modules>
-		<module>AzureChilldModule</module>
+		<module>AzureChilldModule1</module>
 		<module>AzureChildModule2</module>
 		<module>AzureChildModule3</module>
 	</modules>
